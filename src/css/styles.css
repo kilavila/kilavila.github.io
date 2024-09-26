@@ -1,0 +1,142 @@
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+@import "./mobile.css";
+
+:root {
+    --color-crust: #11111b;
+    --color-base: #1e1e2e;
+    --color-surface-0: #313244;
+    --color-text: #cdd6f4;
+    --color-subtext-0: #a6adc8;
+    --color-lavender: #b4befe;
+    --color-rosewater: #f5e0dc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--color-crust);
+    color: var(--color-text);
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    padding: 24px;
+}
+
+section {
+    position: relative;
+    margin: 24px 0;
+    padding: 24px;
+    background: var(--color-base);
+    border: 1px solid var(--color-surface-0);
+    border-radius: 10px;
+    box-shadow:
+        inset 0 6px 10px rgba(0, 0, 0, 0.12),
+        inset 0 3px 6px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+
+    & .background-graphics {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: var(--color-rosewater);
+        opacity: 0.015;
+        font-size: 30rem;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 4px 0;
+    display: flex;
+
+    & .label {
+        display: block;
+        width: 120px;
+        color: var(--color-subtext-0);
+    }
+}
+
+a {
+    color: var(--color-lavender);
+}
+
+h2 {
+    color: var(--color-rosewater);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.entry {
+    margin: 24px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+
+    & .main {
+        flex: 2;
+
+        & .tags {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            & .tag {
+                padding: 4px 12px;
+                background: var(--color-lavender);
+                color: var(--color-crust);
+                border-radius: 20px;
+            }
+        }
+    }
+
+    & .aside {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        & .school,
+        & .firm {
+            font-weight: 700;
+        }
+    }
+
+    & h3,
+    & .school,
+    & .firm {
+        margin-bottom: 6px;
+    }
+}

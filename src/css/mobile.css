@@ -9,4 +9,16 @@
             color: var(--color-subtext-0);
         }
     }
+
+    .entry {
+        flex-direction: column-reverse;
+        gap: 0 !important;
+
+        & .aside {
+            flex-direction: row !important;
+            gap: 12px;
+            text-align: left;
+            font-size: 0.85rem;
+        }
+    }
 }

@@ -16,6 +16,16 @@ const contactInfo = [
     value:
       "<a href='mailto:christer.kilavik@protonmail.com'>christer.kilavik@protonmail.com</a>",
   },
+  // {
+  //   label: "Github",
+  //   value:
+  //     "<a href='https://github.com/kilavila' target='_blank'>github.com/kilavila</a>",
+  // },
+  // {
+  //   label: "Codeberg",
+  //   value:
+  //     "<a href='https://codeberg.org/kilavila' target='_blank'>codeberg.org/kilavila</a>",
+  // },
 ];
 
 export { contactInfo };

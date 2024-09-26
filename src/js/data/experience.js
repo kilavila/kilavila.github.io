@@ -7,7 +7,7 @@ const experience = [
     `,
     tags: ["JavaScript", "API"],
     firm: "Klar Kode",
-    year: "2024 -",
+    year: "2024 - Nåværende",
   },
   {
     title: "Leder, Virtuell Omvisning",

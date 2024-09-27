@@ -7,3 +7,10 @@ customElements.define("contact-info", ContactInfo);
 customElements.define("education-table", EducationTable);
 customElements.define("experience-table", ExperienceTable);
 customElements.define("other-experiences", OtherExperiences);
+
+const backToTop = document.querySelector(".back-to-top");
+backToTop.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

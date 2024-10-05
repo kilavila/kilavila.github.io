@@ -1,3 +1,16 @@
+/**
+ * @typedef {Object} ExperienceItem
+ * @property {string} title - The job title
+ * @property {string} description - Detailed description of the job role
+ * @property {string[]} tags - Array of skills or technologies associated with the job
+ * @property {string} firm - The name of the company or organization
+ * @property {string} year - The time period of employment
+ */
+
+/**
+ * Array of work experience items
+ * @type {ExperienceItem[]}
+ */
 const experience = [
   {
     title: "Mentor",

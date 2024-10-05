@@ -1,3 +1,7 @@
+/**
+ * An array containing various work experiences and qualifications.
+ * @type {string[]}
+ */
 const otherExperiences = [
   "Klatreinstruktør - Kursing og organisert aktivitet",
   "Gårdsbruk - Jobbing med dyr, traktor og div. vedlikehold",

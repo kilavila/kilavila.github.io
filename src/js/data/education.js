@@ -1,3 +1,15 @@
+/**
+ * @typedef {Object} EducationItem
+ * @property {string} title - The title of the education program.
+ * @property {string} description - A description of the education program.
+ * @property {string} school - The name of the school where the education was obtained.
+ * @property {string} year - The year or range of years when the education took place.
+ */
+
+/**
+ * Array containing education information.
+ * @type {EducationItem[]}
+ */
 const education = [
   {
     title: "Helse- og oppvekstfag",

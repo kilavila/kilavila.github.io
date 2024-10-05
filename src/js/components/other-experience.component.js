@@ -1,16 +1,35 @@
 import { otherExperiences } from "../data/other-experiences.js";
 
+/**
+ * Custom element representing a list of other experiences.
+ * @extends HTMLElement
+ */
 class OtherExperiencesList extends HTMLElement {
+  /**
+   * Creates an instance of OtherExperiencesList.
+   */
   constructor() {
     super();
 
+    /**
+     * Array of other experiences.
+     * @type {string[]}
+     */
     this.otherExperiences = otherExperiences;
   }
 
+  /**
+   * Lifecycle callback when the element is added to the DOM.
+   */
   connectedCallback() {
     this.render();
   }
 
+  /**
+   * Creates a new list item element for an experience entry.
+   * @param {string} entry - The experience entry string.
+   * @returns {string} The HTML string for the list item.
+   */
   newLiElement(entry) {
     const entryArr = entry.split(" - ");
     return `
@@ -21,6 +40,9 @@ class OtherExperiencesList extends HTMLElement {
     `;
   }
 
+  /**
+   * Renders the list of other experiences.
+   */
   render() {
     this.innerHTML = `
       <ul>

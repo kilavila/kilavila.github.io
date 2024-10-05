@@ -1,3 +1,13 @@
+/**
+ * @typedef {Object} ContactInfo
+ * @property {string} label - The label for the contact information.
+ * @property {string} value - The value or content of the contact information.
+ */
+
+/**
+ * Array containing contact information.
+ * @type {ContactInfo[]}
+ */
 const contactInfo = [
   {
     label: "Fødselsdato",
